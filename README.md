@@ -1,1 +1,1 @@
-# goworkshop
+# Go Programming Language Workshop
