@@ -9,7 +9,7 @@ Go 프로그래밍 언어를 짧은 시간내에 효과적으로 익히는데 �
  * 
 
 ## 워크숍 둘러보기
- * [Go 워크숍](courses/go/README.md)
+ * [Go 워크숍](courses/README.md)
 
 ## 워크숍 관련 문의
  * jeyong@구글.com
