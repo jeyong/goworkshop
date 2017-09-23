@@ -1,17 +1,17 @@
 ## 에러 핸들링 디자인 (Error Handling Design)
 
-Error handling is critical for making your programs reliable, trustworthy and respectful to those who depend on them. A proper error value is both specific and informative. It must allow the caller to make an informed decision about the error that has occurred. There are several ways in Go to create error values. This depends on the amount of context that needs to be provided.
+에러 핸들링은 신뢰할 수 있는 프로그램으로 만드는데 핵심이 됩니다. 적절한 에러 값이란 구체적이며 정보를 포함하고 있어야 합니다. 이렇게 하면 호출자에게 발생한 에러에 대한 처리를 할 수 있도록 할 수 있습니다. Go에서는 에러 값을 생성하는 여러 방법이 있습니다. 제공해야할 context의 양에 따라 달라집니다. 
 
 ## 노트
 
-* Use the default error value for static and simple formatted messages.
-* Create and return error variables to help the caller identify specific errors.
-* Create custom error types when the context of the error is more complex.
-* Error Values in Go aren't special, they are just values like any other, and so you have the entire language at your disposal.
+* 정적이고 단순한 포맷 메시지에 대해서는 기본 에러 값을 사용한다.
+* 호출자가 특정 에러를 식별할 수 있도록 에러 변수를 생성하고 반환한다.
+* 에러의 컨텍스트가 복잡하다면 커스텀 에러 타입을 생성한다.
+* Go에서 에러 값은 특별한 것이 아니다. 그냥 값일 뿐이다. 따라서 원하는대로 처리할 수 있다.
 
-## Quotes
+## 인용
 
-_Systems cannot be developed assuming that human beings will be able to write millions of lines of code without making mistakes, and debugging alone is not an efficient way to develop reliable systems. - Al Aho (inventor of AWK)_
+_사람이 실수 없이 수백만 라인의 코드를 작성할 수 있을 것이라고 가정하고 시스템을 개발할 수 없으며, 신뢰할 수 있는 시스템을 개발하는 디버깅만이 효과적인 방법도 아니다. - Al Aho (inventor of AWK)_
 
 ## 링크
 
@@ -38,13 +38,13 @@ https://dave.cheney.net/2016/06/12/stack-traces-and-the-errors-package
 ## 연습문제
 
 ### 연습문제 1
-Create two error variables, one called ErrInvalidValue and the other called ErrAmountTooLarge. Provide the static message for each variable. Then write a function called checkAmount that accepts a float64 type value and returns an error value. Check the value for zero and if it is, return the ErrInvalidValue. Check the value for greater than $1,000 and if it is, return the ErrAmountTooLarge. Write a main function to call the checkAmount function and check the return error value. Display a proper message to the screen.
+2개 에러 변수를 생성합니다. 하나는 ErrInvalidValue고 다른 하나는 ErrAmountTooLarge입니다. 각 변수에 대해서 정적 메시지를 제공합니다. 다음으로 checkAmount라는 함수를 작성하며 이 함수는 float64 타입 값을 받아서 에러 값을 반환합니다. $1,000보다 큰 값인지 체크하고 만약 그렇다면 ErrAmountTooLarge를 반환합니다. main 함수를 작성해서 checkAmount 함수를 호출하고 반환하는 에러 값을 검사합니다. 화면에 적절한 메시지를 출력하세요.
 
 [Template](exercises/template1/template1.go) ([Go Playground](https://play.golang.org/p/Ltxl8Hkrkl)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](https://play.golang.org/p/WHmYkHwYjf))
 
 ### 연습문제 2
-Create a custom error type called appError that contains three fields, err error, message string and code int. Implement the error interface providing your own message using these three fields. Implement a second method named temporary that returns false when the value of the code field is 9. Write a function called checkFlag that accepts a bool value. If the value is false, return a pointer of your custom error type initialized as you like. If the value is true, return a default error. Write a main function to call the checkFlag function and check the error using the temporary interface.
+커스텀 에러 타입으로 appError를 생성합니다. 여기에는 3개 필드로 err error, message string 그리고 code int가 있습니다. 이 3개 필드를 이용해서 여러분의 메시지를 제공하는 error interface를 구현하세요. code 필드의 값이 9이면 false를 반환하는 temporary라는 이름의 2번째 method를 구현하세요. 만약 값이 false이면 여러분이 커스텀 에러 타입으로 초기화했던 포인터를 반환합니다. 만약 값이 true이면, default error를 반환합니다. checkFlag 함수를 호출하는 main 함수를 작성하고 temporary interface를 사용해서 error를 체크하세요. 
 
 [Template](exercises/template2/template2.go) ([Go Playground](http://play.golang.org/p/9nEdNSMa_j)) | 
 [Answer](exercises/exercise2/exercise2.go) ([Go Playground](http://play.golang.org/p/7iX9wZX6WP))

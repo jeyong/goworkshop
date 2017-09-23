@@ -1,6 +1,6 @@
 ## 패키지 기반 디자인 (Package Oriented Design)
 
-_Package Oriented Design allows a developer to identify where a package belongs inside a Go project and the design guidelines the package must respect. It defines what a Go project is and how a Go project is structured. Finally, it improves communication between team members and promotes clean package design and project architecture that is discussable._
+_패키지 기반 디자인은 특정 패키지가 어느 Go project에 속하는지를 개발자가 식별할 수 있게 합니다. 디자인 가이드라인은 해당 패키지가 반드시 지켜야 합니다. 해당 Go project가 무엇이며 어떻게 구조화되어 있는지를 정의합니다. 마지막으로 팀 멤버들 사이에 의사소통이 잘 되도록하며 깔끔한 패키지 디자인과 프로젝트 아키텍쳐가 되도록 돕는 역할을 합니다. 
 
 ## 링크
 
@@ -9,19 +9,19 @@ https://www.goinggo.net/2017/02/package-oriented-design.html
 
 ## 히스토리
 
-In an interview given to Brian Kernighan by Mihai Budiu in the year 2000, Brian was asked the following question:
+2000년에 Mihai Budiu가 진행한 Brian Kernighan와의 인터뷰에서 다음과 같은 질문을 했다: 
 
-**_“Can you tell us about the worse features of C, from your point of view”?_**
+**_“당신의 관점에서 C에서 가장 나쁜 특징이 무엇인지 말해주시겠어요”?_**
 
-This was Brian’s response:
+다음과 같이 Brian이 답변했다:
 
-**_“I think that the real problem with C is that it doesn’t give you enough mechanisms for structuring really big programs, for creating "firewalls" within programs so you can keep the various pieces apart. It’s not that you can’t do all of these things, that you can’t simulate object-oriented programming or other methodology you want in C. You can simulate it, but the compiler, the language itself isn’t giving you any help.”_**
+**_“제가 생각하기에 C가 가진 실제 문제는 큰 프로그램을 구조화하는데 필요한 매커니즘을 제공하지 않는다는 것입니다. 여러 부분들을 별도로 유지하기 위해서는 프로그램 내부에 "firewalls"를 생성해야 하니까요. 이런 것을 모두를 할 수 없다는 뜻은 아닙니다. 이를 시뮬레이션할 수 있지만 컴파일러나 언어 자체가 도움을 주지는 않으니까요.
 
-## Language Mechanics
+## 기본 구조
 
-* Packaging directly conflicts with how we have been taught to organize source code in other languages.
-* In other languages, packaging is a feature that you can choose to use or ignore.
-* You can think of packaging as applying the idea of microservices on a source tree.
+* 패키징은 다른 언어에서 소스 코드를 구조하는 방법과 충돌이 발생한다.
+* 다른 언어에서 패키징은 사용하거나 무시할지 선택할 수 있는 특징이다. 
+* 소스트리에서 마이크로서비스의 개념을 적용하는 것처럼 패키징을 생각할 수 있다.
 * All packages are "first class," and the only hierarchy is what you define in the source tree for your project.
 * There needs to be a way to “open” parts of the package to the outside world.
 * Two packages can’t cross-import each other. Imports are a one way street. 
