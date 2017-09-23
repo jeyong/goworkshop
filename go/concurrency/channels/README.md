@@ -1,9 +1,9 @@
 ## 채널 (Channels)
-Channels allow goroutines to communicate with each other through the use of signaling semantics. Channels accomplish this signaling through the use of sending/receiving data or by identifying state changes on individual channels. Don't architect software with the idea of channels being a queue, focus on signaling and the semantics that simplify the orchestration required.
+채널은 goroutine들이 서로 통신하는 방식으로 시그널링의 개념을 이용합니다. 데이터를 주고/받기를 통하거나 개별 채널에서 상태 변화를 식별하는 방식을 통해서 시그널을 구현합니다. 큐 방식의 채널을 이용해서 소프트웨어를 구성하는 대신 시그널링과 조직을 단순화 시키는데 초점을 맞추야 합니다.   
 
 ## 디자인 가이드
 
-* Learn about the [design guidelines](../../#channel-design) for channels.
+* 채널에 대한 [디자인 가이드라인](../../#channel-design)을 참고하세요.
 
 ## 다이어그램
 

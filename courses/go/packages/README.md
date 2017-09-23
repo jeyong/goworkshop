@@ -1,6 +1,6 @@
 ## 패키지 (Packages)
 
-This material covers the essential things you need to know about the standard library and some important third party packages. Along the way you also learn about the most commonly used packages.
+여기서는 표준 라이브러리와 주요 써드파티 패키지에 대해서 알아봅니다. 이를 통해 가장 일반적으로 사용하는 패키지를 배워봅니다. 
 
 
 #### 패키지

@@ -1,7 +1,6 @@
 ## Tooling
 
-This material covers a good portion of the tooling that comes with go. Specifically we cover testing and benchmarking. We also cover profiling memory and the scheduler. Finally we learn how to read stack traces.
-
+Go에서 제공하는 유용한 도구인 테스팅과 벤치마킹에 대해서 소개합니다. 메모리와 스케쥴러 프로파일링이 포함됩니다. 마지막으로 stck trace를 읽는 방법에 대해서 알아봅니다. 
 
 #### 테스팅과 벤치마킹 (Testing and Benchmarking)
 [테스팅](../../../go/testing/tests/README.md) | 

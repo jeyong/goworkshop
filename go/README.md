@@ -2,48 +2,48 @@
 
 [Go](../courses/go/README.md)
 
-## Design Guidelines
+## 디자인 가이드라인
  
 _"An architecture isn't a set of pieces, it's a set of rules about what you can expect of them." - Michael Feathers_
 
-You must develop a design philosophy that establishes a set of guidelines. This is more important than developing a set of rules or patterns you apply blindly. Guidelines help to formulate, drive and validate decisions. You can't begin to make the best decisions without understanding the impact of your decisions. Every decision you make, every line of code you write comes with trade-offs.
+여러분도 가이드라인을 만들기 위한 디자인 철학을 반드시 개발해야 합니다. 그냥 다른 사람이 적용한 패턴이나 룰을 사용하는 대신 직접 만들어 보는 것을 권합니다. 가이드라인은 의사결정을 하는 경우에 도움이 됩니다. 여러분의 의사결정이 어떤 영향을 미칠지 모른다면 최선의 결정을 내리기 어려울 것입니다. 매 코드 라인마다 여러분이 내리는 의사결정에는 그에 따르는 트레이드오프가 있습니다.      
 
 * [Prepare Your Mind](https://github.com/ardanlabs/gotraining/tree/master/topics/go#prepare-your-mind)
-* [Productivity vs Performance](https://github.com/ardanlabs/gotraining/tree/master/topics/go#productivity-vs-performance)
-* [Correctness vs Performance](https://github.com/ardanlabs/gotraining/tree/master/topics/go#correctness-vs-performance)
-* [Code Reviews](https://github.com/ardanlabs/gotraining/tree/master/topics/go#code-reviews)
-* [Data Oriented Design](https://github.com/ardanlabs/gotraining/tree/master/topics/go#data-oriented-design)
-* [Interface And Composition Design](https://github.com/ardanlabs/gotraining/tree/master/topics/go#interface-and-composition-design)
-* [Package Oriented Design](https://github.com/ardanlabs/gotraining/tree/master/topics/go#package-oriented-design)
-* [Concurrent Software Design](https://github.com/ardanlabs/gotraining/tree/master/topics/go#concurrent-software-design)
-* [Channel Design](https://github.com/ardanlabs/gotraining/tree/master/topics/go#channel-design)
+* [생산성 vs 성능](https://github.com/ardanlabs/gotraining/tree/master/topics/go#productivity-vs-performance)
+* [정확성 vs 성능](https://github.com/ardanlabs/gotraining/tree/master/topics/go#correctness-vs-performance)
+* [코드 리뷰](https://github.com/ardanlabs/gotraining/tree/master/topics/go#code-reviews)
+* [데이터 기반 디자인](https://github.com/ardanlabs/gotraining/tree/master/topics/go#data-oriented-design)
+* [Interface와 Composition 디자인](https://github.com/ardanlabs/gotraining/tree/master/topics/go#interface-and-composition-design)
+* [패키지 기반 디자인](https://github.com/ardanlabs/gotraining/tree/master/topics/go#package-oriented-design)
+* [동시성 소프트웨어 디자인](https://github.com/ardanlabs/gotraining/tree/master/topics/go#concurrent-software-design)
+* [Channel 디자인](https://github.com/ardanlabs/gotraining/tree/master/topics/go#channel-design)
 
 ---
 
-### Prepare Your Mind
+### 마음 가짐
 
-**Somewhere Along The Line**  
-* We became impressed with programs that contain large amounts of code.
-* We strived to create large abstractions in our code base.
-* We forgot that the hardware is the platform.
-* We lost the understanding that every decision comes with a cost.
+**지금까지는**  
+* 코드양이 많은 프로그램이 큰 인상을 주었다.
+* 코드에서 큰 추상화를 만드는데 고군분투했다.
+* 하드웨어는 플랫폼이였다는 사실을 잊고 있었다.
+* 모든 결정에는 대가가 따른다는 사실을 이해하지 못했다.
 
-**These Days Are Gone**  
-* We can throw more hardware at the problem.
-* We can throw more developers at the problem.
+**더이상 이런 접근은 그만**  
+* 하드웨어를 통해서 문제 해결
+* 더 많은 개발자를 투입해서 문제 해결
 
-**Aspire To**  
-* Be a champion for quality, efficiency and simplicity.
-* Have a point of view.
-* Value introspection and self-review.
+**열망하는 것**
+* 최과의 품질, 효율성 그리고 단순성 가지기 
+* 스스로의 관점을 가지고
+* 가치있는 자기 성찰 및 자기 리뷰
 
-**Open Your Mind**  
-* Technology changes quickly but people's minds change slowly.
-* Easy to adopt new technology but hard to adopt new ways of thinking.
+**마음을 열고**  
+* 기술은 빠르게 변하지만 사람들의 변화는 느리다.
+* 새로운 기술을 채택하는 것은 쉽지만 새로운 방식으로 생각하는 것은 어렵다.
 
 ---
 
-### Legacy Software
+### 기존 소프트웨어(legacy Software)
 
 Do you care about the legacy you are leaving behind?
 

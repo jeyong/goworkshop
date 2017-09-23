@@ -1,15 +1,13 @@
 ## 동시성(Concurrency)
 
-This material covers all the concurrency aspects of the language. Once you are done with this material you will understand the concurrent mechanics of the language and mechanical sympathies the language has for both the hardware and operating system as it related to concurrency.
+Go언어에서 제공하는 동시성에 대해서 알아봅니다. 이 부분을 마치고 나면 Go에서 동시성 기본동작을 이해하며 동시성과 관련하여 하드웨어와 운영체제가 어떻게 관계되어 있는지를 이해하게 됩니다. 
 
-*Note: This material has been designed to be taught in a classroom environment. The code is well commented but missing some of the contextual concepts and ideas that will be covered in class.*
-
-#### Language Mechanics
+#### 언어 기본 구조
 [Goroutines](../../../go/concurrency/goroutines/README.md) | 
 [Data Races](../../../go/concurrency/data_race/README.md) | 
 [Channels](../../../go/concurrency/channels/README.md)
 
-#### Concurrency Patterns
+#### 동시성 패턴
 [Context](../../../go/packages/context/README.md) | 
 [Patterns](../../../go/concurrency/patterns/README.md)
 ___
