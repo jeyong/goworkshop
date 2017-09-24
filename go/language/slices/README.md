@@ -9,7 +9,7 @@ Slice는 Go에서 아주 중요한 자료구조입니다. 유연성, 성능, 동
 * Slice는 동일한 array에 대해서 다양한 "관점"을 제공합니다. 
 * Slice는 built-in 함수인 append를 통해서 늘리는 것이 가능합니다. 
 
-## Links
+## 링크
 
 http://blog.golang.org/go-slices-usage-and-internals  
 https://blog.golang.org/strings  
@@ -21,7 +21,7 @@ http://www.goinggo.net/2013/09/slices-of-slices-of-slices-in-go.html
 http://www.goinggo.net/2013/12/three-index-slices-in-go-12.html  
 https://github.com/golang/go/wiki/SliceTricks  
 
-## Code Review
+## 코드 리뷰
 
 [Declare and Length](example1/example1.go) ([Go Playground](https://play.golang.org/p/lDKravTEqF))  
 [Reference Types](example2/example2.go) ([Go Playground](https://play.golang.org/p/MuqPFwvDux))  
@@ -32,13 +32,13 @@ https://github.com/golang/go/wiki/SliceTricks
 [Variadic functions](example7/example7.go) ([Go Playground](https://play.golang.org/p/TkJxbZKFRl))
 [Range mechanics](example8/example8.go) ([Go Playground](https://play.golang.org/p/cve_NbA6Qn))  
 
-## Advanced Code Review
+## 고급 코드 리뷰
 
 [Three index slicing](advanced/example1/example1.go) ([Go Playground](https://play.golang.org/p/QZQIdaTgtG))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 **Part A** 정수의 nil slice를 선언합니다. 이 slice에 10개 값을 append하는 loop을 생성합니다. slice를 iterate하고 각 값을 화면에 출력합니다. 
 

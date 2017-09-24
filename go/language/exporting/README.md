@@ -9,11 +9,11 @@
 * package를 import하여 export된 식별자에 접근할 수 있다.
 * Any package can use a value of an unexported type, but this is annoying to use.
 
-## Links
+## 링크
 
 http://www.goinggo.net/2014/03/exportedunexported-identifiers-in-go.html  
 
-## Code Review
+## 코드 리뷰
 
 [export된 식별자 선언 및 접근 - Pkg](example1/counters/counters.go) ([Go Playground](https://play.golang.org/p/Sb_G1kcn_7))  
 [export된 식별자 선언 및 접근 - Main](example1/example1.go) ([Go Playground](https://play.golang.org/p/LkIRp4J93P))  
@@ -30,9 +30,9 @@ http://www.goinggo.net/2014/03/exportedunexported-identifiers-in-go.html
 [Unexport된 embedded types - Pkg](example5/users/users.go) ([Go Playground](https://play.golang.org/p/RWpldbVNJe))  
 [Unexport된 embedded types - Main](example5/example5.go) ([Go Playground](https://play.golang.org/p/yts2fe36ay))  
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 **Part A** Create a package named toy with a single exported struct type named Toy. Add the exported fields Name and Weight. Then add two unexported fields named onHand and sold. Declare a factory function called New to create values of type toy and accept parameters for the exported fields. Then declare methods that return and update values for the unexported fields.
 
 **Part B** Create a program that imports the toy package. Use the New function to create a value of type toy. Then use the methods to set the counts and display the field values of that toy value.

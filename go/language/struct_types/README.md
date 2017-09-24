@@ -10,7 +10,7 @@ Struct 타입은 복잡한 타입을 생성하는 방법으로 데이터의 필�
 * (.) 오퍼레이터로 개별 필드 값에 접근할 수 있습니다. 
 * 익명 struct를 만들 수도 있습니다.
 
-## Links
+## 링크
 
 http://www.goinggo.net/2013/07/understanding-type-in-go.html  
 http://www.goinggo.net/2013/07/object-oriented-programming-in-go.html  
@@ -18,19 +18,19 @@ http://dave.cheney.net/2015/10/09/padding-is-hard
 http://www.geeksforgeeks.org/structure-member-alignment-padding-and-data-packing  
 http://www.catb.org/esr/structure-packing
 
-## Code Review
+## 코드 리뷰
 
 [Declare, create and initialize struct types](example1/example1.go) ([Go Playground](https://play.golang.org/p/TEmOrIxl_P))  
 [Anonymous struct types](example2/example2.go) ([Go Playground](https://play.golang.org/p/x-Dpp9Ts_U))  
 [Named vs Unnamed types](example3/example3.go) ([Go Playground](https://play.golang.org/p/QREkSIDAuW))
 
-## Advanced Code Review
+## 고급 코드 리뷰
 
 [Struct type alignments](advanced/example1/example1.go) ([Go Playground](https://play.golang.org/p/nwOX0grify))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 **Part A:** 사용자 정보(name, email, age)를 저장하기 위한 struct 타입을 선언합니다. 이 타입의 값을 생성하고 값으로 초기화하고 각 필드를 출력합니다.
 

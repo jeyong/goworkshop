@@ -2,7 +2,7 @@
 
 포인터는 함수 범위내에서 data를 공유하는 방법을 제공합니다. 포인터를 가지는 참조 데이터로 유연하게 데이터를 공유할 수 있습니다. 필요한 메모리의 양을 최소화시키고 성능을 개선할 수 있습니다.
 
-## Notes
+## 노트
 
 * 데이터를 공유하기 위해서 포인터를 사용합니다.
 * Go에서 값은 항상 값으로 전달합니다.
@@ -69,9 +69,9 @@ The GC has a set of goroutines to perform the task of Mark and Sweep. The schedu
 
 If the GC begins to believe that it can’t finish the collection within the decided amount of time, it will begin to recruit program goroutines to help. Those goroutines that are causing the slow down will be recruited to help.
 
-## Links
+## 링크
 
-### Pointer Mechanics
+### Pointer 내부 동작
 
 https://golang.org/doc/effective_go.html#pointers_vs_values  
 https://www.goinggo.net/2017/05/language-mechanics-on-stacks-and-pointers.html  
@@ -108,7 +108,7 @@ https://godoc.org/golang.org/x/tools/go/ssa
 
 [Debugging code generation in Go](http://golang.rakyll.org/codegen/)
 
-## Code Review
+## 코드 리뷰
 
 [Pass by Value](example1/example1.go) ([Go Playground](https://play.golang.org/p/JJMHWiZ9h9))  
 [Sharing data I](example2/example2.go) ([Go Playground](https://play.golang.org/p/y_FHIdUbAw))  
@@ -116,9 +116,9 @@ https://godoc.org/golang.org/x/tools/go/ssa
 [Escape Analysis](example4/example4.go) ([Go Playground](https://play.golang.org/p/VoQBQk8ijj))  
 [Stack grow](example5/example5.go) ([Go Playground](https://play.golang.org/p/tpDOwBCvqW))  
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 **Part A** 20값으로 int 타입의 변수를 선언하고 초기화합니다. 해당 변수의 주소와 값을 출력합니다.
 
@@ -127,7 +127,7 @@ https://godoc.org/golang.org/x/tools/go/ssa
 [Template](exercises/template1/template1.go) ([Go Playground](https://play.golang.org/p/ZiVZzVkMqk)) |
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](https://play.golang.org/p/ARXt9Ddawc))
 
-### Exercise 2
+### 연습문제 2
 
 struct 타입을 선언하고 이 타입의 값을 생성합니다. 이 struct 타입의 일부 필드의 값을 변경할 수 있는 함수를 선언합니다. 여러분이 작성한 함수의 호출 전후의 값을 출력합니다.
 

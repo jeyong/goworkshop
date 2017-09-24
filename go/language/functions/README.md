@@ -8,26 +8,26 @@
 * error 값은 프로그래밍 로직의 일부로 체크해야만 합니다.
 * blank 식별자는 반환값을 무시하는데 사용합니다. 
 
-## Links
+## 링크
 
 https://golang.org/doc/effective_go.html#functions  
 http://www.goinggo.net/2013/10/functions-and-naked-returns-in-go.html  
 http://www.goinggo.net/2013/06/understanding-defer-panic-and-recover.html
 
-## Code Review
+## 코드 리뷰
 
 [Return multiple values](example1/example1.go) ([Go Playground](https://play.golang.org/p/rJMtATFqPi))  
 [Blank identifier](example2/example2.go) ([Go Playground](https://play.golang.org/p/ziCWrNaGWO))  
 [Redeclarations](example3/example3.go) ([Go Playground](https://play.golang.org/p/CofPHyVpne))  
 [Anonymous Functions/Closures](example4/example4.go) ([Go Playground](https://play.golang.org/p/AhT35gu2fE))
 
-## Advanced Code Review
+## 고급 코드 리뷰
 
 [Recover panics](advanced/example1/example1.go) ([Go Playground](https://play.golang.org/p/UuT3FNWd7x))
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 **Part A** 사용자의 정보를 저장하는 구조체 타입을 선언합니다. 이 타입의 값을 생성하며 이 타입의  
 Declare a struct type to maintain information about a user. Declare a function that creates value of and returns pointers of this type and an error value. Call this function from main and display the value.

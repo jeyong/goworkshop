@@ -11,22 +11,22 @@
 * 명시적과 암묵적 변환에 대해서 익히기
 * 상수의 강력함을 이해하고 표준 라이브러이에서 어떻게 사용하는지 보기
 
-## Links
+## 링크
 
 https://golang.org/ref/spec#Constants  
 http://blog.golang.org/constants  
 http://www.goinggo.net/2014/04/introduction-to-numeric-constants-in-go.html
 
-## Code Review
+## 코드 리뷰
 
 [상수 선언과 초기화](example1/example1.go) ([Go Playground](https://play.golang.org/p/dIJb3S6CIb))  
 [병렬 타입 시스템 (Kind)](example2/example2.go) ([Go Playground](https://play.golang.org/p/-DUJAVsTMp))  
 [iota](example3/example3.go) ([Go Playground](https://play.golang.org/p/1Y9qjOuPt0))  
 [묵시적 변환](example4/example4.go) ([Go Playground](https://play.golang.org/p/QzVFcMdU5S))  
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 **Part A:** untyped와 typed 상수 선언과 값 출력
 
