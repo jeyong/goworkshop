@@ -7,13 +7,11 @@
 
 [Go 부트캠프](go/README.md)
 
-## Go 웹 프로그래밍
-
-Coming soon
-
-## Go 데이터 프로그래밍
-
-Coming soon
+## 준비 중인 워크숍
+### Go 웹 프로그래밍
+ *
+### Go 데이터 프로그래밍
+ *
 
 ___
 모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.
