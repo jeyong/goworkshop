@@ -4,7 +4,7 @@ Go는 코드의 성능을 테스트하는 기능을 지원합니다.
 
 ## 패키지 리뷰
 
-[Basic Benchmarking](basic/basic_test.go)  
+[기본 Benchmarking](basic/basic_test.go)  
 [Sub Benchmarks](sub/sub_test.go)  
 [Validate Benchmarks](validate/validate_test.go)  
 [Prediction](prediction/README.md)  

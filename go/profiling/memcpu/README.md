@@ -50,9 +50,9 @@ memory 프로파일 옵션 내용
 
 실행 속도를 개선하고자 한다면, 주요한 실행 시간이나 프로그램 종료시에 수집한 `-alloc_objects` 프로파일을 살펴봅니다.
 
-## Code Review
+## 코드 리뷰
 
 [Profiling](stream.go) ([Go Playground](https://play.golang.org/p/n_SzF4Cer4)) |
 [Profiling Test](stream_test.go) ([Go Playground](https://play.golang.org/p/TnXrxJVfLV))
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

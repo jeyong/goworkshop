@@ -45,18 +45,18 @@ http://www.goinggo.net/2014/02/the-nature-of-channels-in-go.html
 
 ## 고급 코드 리뷰
 
-[Channel communication ordering](advanced/example1/example1.go) ([Go Playground](https://play.golang.org/p/b3pPHMYZbX))
+[Channel 통신 순서](advanced/example1/example1.go) ([Go Playground](https://play.golang.org/p/b3pPHMYZbX))
 
 ## 연습문제
 
 ### 연습문제 1
-Write a program where two goroutines pass an integer back and forth ten times. Display when each goroutine receives the integer. Increment the integer with each pass. Once the integer equals ten, terminate the program cleanly.
+2개 goroutine이 10회에 걸쳐서 integer을 주고받는 프로그램을 작성하세요. 각 goroutine이 integer를 수신할 때 화면에 표시하세요. 각 전달에서 integer를 증가시킵니다. 일단 integer가 10이 되면 프로그램을 종료합니다.
 
 [Template](exercises/template1/template1.go) ([Go Playground](https://play.golang.org/p/BUNf38ZLka)) | 
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](https://play.golang.org/p/nCYvfXQwgU))
 
 ### 연습문제 2
-Write a program that uses a fan out pattern to generate 100 random numbers concurrently. Have each goroutine generate a single random number and return that number to the main goroutine over a buffered channel. Set the size of the buffer channel so no send every blocks. Don't allocate more buffers than you need. Have the main goroutine display each random number is receives and then terminate the program.
+100개 랜덤 수를 동시에 생성하기 위해서 fan out 패턴을 사용하는 프로그램을 작성하세요. 각 goroutine이 단일 랜덤 수를 생성하고 이 수를 buffered 채널로 main goroutine에 반환합니다. buffer 채널의 크기를 설정해서 매 블록을 전달할 필요없도록 합니다. 필요한 buffer 사이즈만 할당하세요. main goroutine이 각 랜덤 수를 출력하도록 하고 프로그램을 종료합니다.
 
 [Template](exercises/template2/template2.go) ([Go Playground](http://play.golang.org/p/CpsDFNmazH)) | 
 [Answer](exercises/exercise2/exercise2.go) ([Go Playground](http://play.golang.org/p/Li7hl3pOSu))

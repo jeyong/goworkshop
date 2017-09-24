@@ -42,11 +42,11 @@ _코드를 [profile](../../profiling/README.md)하기 위한 벤치마킹 사용
 
 ## 커버리지(Coverage)
 
-Making sure your tests cover as much of your code as possible is critical. Go's testing tool allows you to create a profile for the code that is executed during all the tests and see a visual of what is and is not covered.
+여러분이 작성한 테스트가 코드의 가능한 많은 부분을 커버한다는 것은 중요합니다. Go의 테스팅 도구로 모든 테스트가 실행하는 코드에 대해서 프로파일을 생성하는 것이 가능합니다. 그리고 무엇을 하는지 그리고 커버되지 않는 부분을 시각적으로 표현할 수 있습니다.
 
 	go test -coverprofile cover.out
 	go tool cover -html=cover.out
 
 ![figure1](testing_coverage.png)
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

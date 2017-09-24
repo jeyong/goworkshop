@@ -30,11 +30,11 @@ trace를 리뷰하기 위해서 trace tool을 실행합니다.
 
 	$ go tool trace trace.out
 
-## Links
+## 링크
 
 
-## Code Review
+## 코드 리뷰
 
 [Blocking Trace](blocking_test.go) ([Go Playground](https://play.golang.org/p/cjqIVeAwHz))
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

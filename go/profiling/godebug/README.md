@@ -143,7 +143,7 @@ gc trace를 살펴봅니다.
     5MB         : Goal heap size
     8P          : Number of logical processors
 
-## Links
+## 링크
 
 [Tour of Go's env variables](http://dave.cheney.net/2015/11/29/a-whirlwind-tour-of-gos-runtime-environment-variables)   
 [Debugging performance issues in Go programs](https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs)  
@@ -157,8 +157,8 @@ gc trace를 살펴봅니다.
 [Understanding Go memory usage](https://deferpanic.com/blog/understanding-golang-memory-usage)  
 [Visualising garbage collection algorithms](https://spin.atomicobject.com/2014/09/03/visualizing-garbage-collection-algorithms/)
 
-## Code Review
+## 코드 리뷰
 
 [Web Service](godebug.go) ([Go Playground](https://play.golang.org/p/cLfl3dZYLf))
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

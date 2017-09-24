@@ -67,4 +67,4 @@ A function named `UnpackUsers` exists and requires fuzzing. A `Fuzz` function an
 
 [Exercise](exercises/exercise1)
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

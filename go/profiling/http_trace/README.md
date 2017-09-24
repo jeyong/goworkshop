@@ -12,19 +12,19 @@ httptrace package는 HTTP round trip 동안 다양한 event에 대해서 정보�
 * request 작성
 * response 읽기
 
-## Links
+## 링크
 
 [Introducing HTTP Tracing](https://blog.golang.org/http-tracing) - Jaana Burcu Dogan  
 
-## Code Review
+## 코드 리뷰
 
 [Tracing events](example1/example1.go) ([Go Playground](https://play.golang.org/p/du_s3LRX1s))  
 [Tracing with http.Client](example2/example2.go) ([Go Playground](https://play.golang.org/p/CNPz8tjnYj))  
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 TBD
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

@@ -18,12 +18,12 @@ TestMutexProfile 함수를 살펴봅니다.
 
 	$ list TestMutexProfile
 
-## Links
+## 링크
 
 [Mutex profile](https://rakyll.org/mutexprofile) - Burcu Dogan  
 
-## Code Review
+## 코드 리뷰
 
 [Mutex Trace](mutex_test.go) ([Go Playground](https://play.golang.org/p/P1eOVX6D7u))
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

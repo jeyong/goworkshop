@@ -52,4 +52,4 @@ http://archive.arstechnica.com/cpu/1q00/crusoe/m-crusoe-1.html
 
 [Tests](prediction_test.go) ([Go Playground](http://play.golang.org/p/_VcWtAKH4Z))
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

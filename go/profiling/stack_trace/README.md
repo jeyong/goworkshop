@@ -1,4 +1,4 @@
-## Stack Traces and Core Dumps
+## Stack Traces와 Core Dumps
 
 Having some basic skills in debugging Go programs can save any programmer a good amount of time trying to identify problems. I believe in logging as much information as you can, but sometimes a panic occurs and what you logged is not enough. Understanding the information in a stack trace can sometimes mean the difference between finding the bug now or needing to add more logging and waiting for it to happen again. We can also stop a running program and get Core Dump which also generates a stack trace.
 
@@ -14,7 +14,7 @@ Having some basic skills in debugging Go programs can save any programmer a good
 
 These two programs called the built-in function `panic` to produce a stack trace. Stack traces show not only the call stack from the line of code that caused the panic. They also show the values that were passed into each function.
 
-### Example 1
+### 예제 1
 
 Build and run the program.
 
@@ -40,7 +40,7 @@ Review the stack trace.
     String Value:  0x708a8, 0x5
     Integer Value: 0xa
 
-### Example 2
+### 예제 2
 
 Build and run the program.
 
@@ -68,12 +68,12 @@ Review the stack trace.
     16-23   0000 0001   01    true
     24-31   0001 1001   19    25
 
-### Code Review
+### 코드 리뷰
 
 [Review Stack Trace](example1/example1.go) ([Go Playground](https://play.golang.org/p/9gkLGCdbNe))  
 [Packing](example2/example2.go) ([Go Playground](https://play.golang.org/p/SIiN6Y2jTR))  
 
-### Links
+### 링크
 
 [Stack traces in Go](http://www.goinggo.net/2015/01/stack-traces-in-go.html)  
 
@@ -81,7 +81,7 @@ Review the stack trace.
 
 You can generate a core dump of any running Go program by issuing a SIGQUIT to the program. You can do this by pressing (Ctrl+\\) on your keyboard.
 
-### Generating a Core Dump
+### Core Dump 생성하기
 
 Build and run the example program.
 
@@ -140,12 +140,12 @@ Use Delve to review the dump.
     109:		SYSCALL
     => 110:		RET
 
-### Links
+### 링크
 
 [Debugging Go core dumps](https://rakyll.org/coredumps/?utm_source=golangweekly&utm_medium=email)  
 
-### Code Review
+### 코드 리뷰
 
 [Core Dumps](example3/example3.go) ([Go Playground](https://play.golang.org/p/2fma3AXMmZ))  
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

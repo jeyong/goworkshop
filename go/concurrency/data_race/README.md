@@ -1,15 +1,15 @@
 ## Data Races
 
-A data race is when two or more goroutines attempt to read and write to the same resource at the same time. Race conditions can create bugs that totally appear random or can be never surface as they corrupt data. Atomic functions and mutexes are a way to synchronize the access of shared resources between goroutines.
+data race는 2개 이상의 goroutine이 동일한 리소스에 동시에 읽기나 쓰기를 시도하는 경우입니다. race 조건은 완전히 랜덤하게 발생하여 버그가 될 수 있고 데이터를 오염시키지만 드러나지 않을 수 있습니다. atomic 함수와 mutex는 goroutine들 사이에서 공유 리소스에 접근을 동기화시키는 방식입니다.
 
 ## 노트
 
-* Goroutines need to be coordinated and synchronized.
-* When two or more goroutines attempt to access the same resource, we have a data race.
-* Atomic functions and mutexes can provide the support we need.
+* goroutine들을 순서를 조정하여 동기화가 필요하다.
+* 2개 이상 goroutine이 동일 리소스에 접근하고자 하는 경우에 data race가 된다.
+* atomic 함수와 mutex는 필요한 지원을 제공한다.
 
 ## Cache Coherency and False Sharing
-This content is provided by Scott Meyers from his talk in 2014 at Dive:
+아래 정보는 2014년에 Dive에서 Scott Meyers가 이야기한 내용:
 
 [CPU Caches and Why You Care (30:09-38:30)](https://youtu.be/WDIkqP4JbkE?t=1809)  
 [Code Example](../../testing/benchmarks/falseshare/README.md)
@@ -23,7 +23,7 @@ This content is provided by Scott Meyers from his talk in 2014 at Dive:
 
 ## 링크
 
-[Eliminate False Sharing](http://www.drdobbs.com/parallel/eliminate-false-sharing/217500206)
+[False Sharing 제거하기](http://www.drdobbs.com/parallel/eliminate-false-sharing/217500206)
 
 [The Go Memory Model](https://golang.org/ref/mem)  
 http://blog.golang.org/race-detector  
@@ -32,7 +32,7 @@ https://golang.org/doc/articles/race_detector.html
 
 ## 다이어그램
 
-### 예제1에서 Data Race 관점
+### 예제1에서의 Data Race 관점
 
 ![](data_race.png)
 
@@ -50,7 +50,7 @@ https://golang.org/doc/articles/race_detector.html
 ## 연습문제
 
 ### 연습문제 1
-Given the following program, use the race detector to find and correct the data race.
+다음 프로그램에서 race detector를 사용해서 data race 찾고 이를 수정하세요.
 
 	// https://play.golang.org/p/F5DCJTZ6Lm
 

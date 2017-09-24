@@ -29,8 +29,8 @@ View the profile.
 
     $ go tool pprof ./trace cpu.out  
 
-## Code Review
- 
+## 코드 리뷰
+
 [Profiling Test](trace.go) ([Go Playground](https://play.golang.org/p/QJahKPIydE))
 ___
-All material is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0).
+모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.
