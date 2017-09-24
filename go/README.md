@@ -4,11 +4,11 @@
 
 ## 디자인 가이드라인
  
-_"An architecture isn't a set of pieces, it's a set of rules about what you can expect of them." - Michael Feathers_
+_"아키텍쳐는 단순히 조각의 지합이 아니다. 조각들로 무엇을 할 수 있는지 룰의 집합을 만드는 것이다." - Michael Feathers_
 
 여러분도 가이드라인을 만들기 위한 디자인 철학을 반드시 개발해야 합니다. 그냥 다른 사람이 적용한 패턴이나 룰을 사용하는 대신 직접 만들어 보는 것을 권합니다. 가이드라인은 의사결정을 하는 경우에 도움이 됩니다. 여러분의 의사결정이 어떤 영향을 미칠지 모른다면 최선의 결정을 내리기 어려울 것입니다. 매 코드 라인마다 여러분이 내리는 의사결정에는 그에 따르는 트레이드오프가 있습니다.      
 
-* [Prepare Your Mind](https://github.com/ardanlabs/gotraining/tree/master/topics/go#prepare-your-mind)
+* [마음 가짐](https://github.com/ardanlabs/gotraining/tree/master/topics/go#prepare-your-mind)
 * [생산성 vs 성능](https://github.com/ardanlabs/gotraining/tree/master/topics/go#productivity-vs-performance)
 * [정확성 vs 성능](https://github.com/ardanlabs/gotraining/tree/master/topics/go#correctness-vs-performance)
 * [코드 리뷰](https://github.com/ardanlabs/gotraining/tree/master/topics/go#code-reviews)
@@ -59,7 +59,7 @@ Productivity and performance both matter, but in the past you couldn’t have bo
 
 By following Go’s idioms and a few guidelines, we can write code that can be reasoned about by anyone who looks at it. We can write software that simplifies, minimizes and reduces the amount of code we need to solve the problems we are working on. We don’t have to choose productivity over performance or performance over productivity anymore. We can have both.
 
-**Quotes**
+**인용**
 
 _"The hope is that the progress in hardware will cure all software ills. However, a critical observer may observe that software manages to outgrow hardware in size and sluggishness. Other observers had noted this for some time before, indeed the trend was becoming obvious as early as 1987." - Niklaus Wirth_
 
@@ -83,7 +83,7 @@ Too many developers are not prototyping their ideas first before writing product
 
 Refactoring must become part of the development cycle. Refactoring is the process of improving the code from the things that you learn on a daily basis. Without time to refactor, code will become impossible to manage and maintain over time. This creates the legacy issues we are seeing today.
 
-**Quotes**
+**인용**
 
 _"The correctness of the implementation is the most important concern, but there is no royal road to correctness. It involves diverse tasks such as thinking of invariants, testing and code reviews. Optimization should be done, but not prematurely." - Al Aho (inventor of AWK)_
 
@@ -174,7 +174,7 @@ Carelessness  |        Education         |   Dangerous Situation   |
 
 ---
 
-### Readability
+### 가독성
 
 **_We must structure our systems to be more comprehensible._**
 
@@ -182,13 +182,13 @@ This is about writing simple code that is easy to read and understand without th
 
 [Example Readability Issue](http://cpp.sh/6i7d)  
 
-**Real Machine**
+**실제 머신에서**
 
 _"A well-designed language has a one-one correlation between source code and object code. It's obvious to the programmer what code will be generated from their source. This provides its own satisfaction, is efficient, and reduces the need for documentation." - Chuck Moore (inventor of Forth)_
 
 In Go, the underlying machine is the real machine rather than a single abstract machine. The model of computation is that of the computer. Here is the key, Go gives you direct access to the machine while still providing abstraction mechanisms to allow higher-level ideas to be expressed.
 
-**Mental Models**
+**멘탈 모델**
 
 _"Let's imagine a project that's going to end up with a million lines of code or more. The probability of those projects being successful in the United States these days is very low - well under 50%. That's debatable. - Tom Love (inventor of Objective C)_
 
@@ -196,7 +196,7 @@ _100k lines of code fit inside a box of paper. - Tom Love (inventor of Objective
 
 How much code in that box do you think you can maintain a mental model of in your head? I believe asking a single developer to maintain a mental model of more than one ream of paper in that box (~10k lines of code) is asking a lot. If you do the math, then it takes a team of 100 people to work on a code base that hits a million lines of code. That is 100 people that need to be coordinated, grouped, tracked and in a constant feedback loop of communication.
 
-**Average Developer**
+**평균 개발자**
 
 _"Can you explain it to the median user (developer)? as opposed to will the smartest user (developer) figure it out?" - Peter Weinberger (inventor of AWK)_
 
@@ -204,15 +204,15 @@ You must be aware of who you are on your team. When hiring new people, you must 
 
 ---
 
-### Simplicity
+### 단순화
 
 **_We must understand that simplicity is hard to design and complicated to build._**
 
 This is about hiding complexity. A lot of care and design must go into simplicity because this can cause more problems then good. It can create issues with readability and it can cause issues with performance.
 
-**Simple, But Not Simpler**
+**단순하게지 단순히 이전보다 단순하게가 아니다**
 
-_"Everything should be made as simple as possible, but not simpler." - Albert Einstein_
+_"모든 것은 최대한 단순하게 만들어야하는 것이지 이전보다 단순하게가 목표가 아니다." - Albert Einstein_
 
 Focus on encapsulation and validate that you're not generalizing or even being too concise. You might think you are helping the programmer or the code but validate things are still easy to use, understand, debug and maintain.
 
@@ -230,7 +230,7 @@ Encapsulation is what we have been trying to figure out as an industry for 40 ye
 
 ---
 
-### Performance
+### 성능
 
 **_We must compute less to get the results we need._**
 
@@ -256,17 +256,17 @@ Performance is important but it can't be your priority unless the code is not ru
 
 ---
 
-### Micro-Optimizations
+### 마이크로-최적화
 
 Micro-Optimizations are about squeezing every ounce of performance as possible. When code is written with this as the priority, it is very difficult to write code that is readable, simple or idiomatic. You are writing clever code that may require the unsafe package or you may need to drop into assembly.
 
-[Example Micro Optimization](https://play.golang.org/p/D_bImirgXL)
+[마이크로 최적화 예제](https://play.golang.org/p/D_bImirgXL)
 
 ---
 
-### Data-Oriented Design
+### 데이터 기반 디자인(Data-Oriented Design)
 
-**Design Philosophy:**
+**디자인 철학:**
 
 * If you don't understand the data, you don't understand the problem.
 * All problems are unique and specific to the data you are working with.
@@ -288,9 +288,9 @@ Micro-Optimizations are about squeezing every ounce of performance as possible. 
 
 ---
 
-### Interface And Composition Design
+### 인터페이스와 컴포지션 디자인(Interface And Composition Design)
 
-**Design Philosophy:**
+**디자인 철학:**
 
 * Interfaces give programs structure.
 * Interfaces encourage design by composition.
@@ -308,20 +308,20 @@ Micro-Optimizations are about squeezing every ounce of performance as possible. 
 * You must distinguish between code that:
     * defends against fraud vs protects against accidents
 
-**Validation:**
+**확인:**
 
-Use an interface when:  
-* users of the API need to provide an implementation detail.
-* API’s have multiple implementations they need to maintain internally.
-* parts of the API that can change have been identified and require decoupling.
+다음과 같은 경우 interface 사용 :
+* API의 사용자는 상세한 구현을 제공할 필요가 있다.
+* API는 내부적으로 유지보수가 필요한 경우 여러 구현을 가질 수 있다. 
+* 변경할 수 있는 API의 일부는 구별되어야 하고 디커플링이 필요하다.
 
-Don't use an interface:  
-* for the sake of using an interface.
-* to generalize an algorithm.
-* when users can declare their own interfaces.
-* if it's not clear how the interface makes the code better.
+interface를 사용하지 말아야 하는 경우:
+* 단순히 interface를 사용하려고 할때
+* 알고리즘을 일반화하려고 할때
+* 사용자가 자신의 interface를 선언할 수 있을때
+* interface가 코드를 더 낫게 만들지 확실하지 않은 경우
 
-**Resources:**
+**리소스:**
 
 [Methods, interfaces and Embedding](https://www.goinggo.net/2014/05/methods-interfaces-and-embedded-types.html) - William Kennedy  
 [Composition with Go](https://www.goinggo.net/2015/09/composition-with-go.html) - William Kennedy  

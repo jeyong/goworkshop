@@ -23,13 +23,13 @@ https://github.com/dvyukov/go-fuzz
 https://talks.golang.org/2015/dynamic-tools.slide#1  
 https://vimeo.com/141698770  
 [Structuring Tests in Go](https://medium.com/@benbjohnson/structuring-tests-in-go-46ddee7a25c#.b2m3nziyb) - Ben Johnson  
-[Advanced Testing Concepts for Go 1.7](https://speakerdeck.com/mpvl/advanced-testing-concepts-for-go-1-dot-7) - Marcel van Lohuizen  
+[고급 테스팅 컨셉 Go 1.7](https://speakerdeck.com/mpvl/advanced-testing-concepts-for-go-1-dot-7) - Marcel van Lohuizen  
 [Parallelize your table-driven tests](http://golang.rakyll.org/parallelize-test-tables/) - rakyll  
-[Advanced Testing with Go - Video](https://www.youtube.com/shared?ci=LARb45o5TpA) - Mitchell Hashimoto  
-[Advanced Testing with Go - Deck](https://speakerdeck.com/mitchellh/advanced-testing-with-go) - Mitchell Hashimoto  
+[고급 테스팅 Go - Video](https://www.youtube.com/shared?ci=LARb45o5TpA) - Mitchell Hashimoto  
+[고급 테스팅 Go - Deck](https://speakerdeck.com/mitchellh/advanced-testing-with-go) - Mitchell Hashimoto  
 [The tragedy of 100% code coverage](http://labs.ig.com/code-coverage-100-percent-tragedy) - Daniel Lebrero's  
 
-## Code Review
+## 코드 리뷰
 
 [Basic Unit Test](example1/example1_test.go) ([Go Playground](https://play.golang.org/p/bYkkr3uQcp))  
 [Table Unit Test](example2/example2_test.go) ([Go Playground](https://play.golang.org/p/hhavdseEPj))  
@@ -38,9 +38,9 @@ https://vimeo.com/141698770
 [Example Test](example4/handlers/handlers_example_test.go) ([Go Playground](https://play.golang.org/p/6V2J5gr7GC))  
 [Sub Tests](example5/example5_test.go) ([Go Playground](https://play.golang.org/p/d4ZVYkZUGr))  
 
-_Look at the profiling topic to learn more about using test to [profile](../profiling) code._
+_코드를 [profile](../../profiling/README.md)하기 위한 벤치마킹 사용 방법에 대한 정보는 프로파일 링크를 참고하세요._
 
-## Coverage
+## 커버리지(Coverage)
 
 Making sure your tests cover as much of your code as possible is critical. Go's testing tool allows you to create a profile for the code that is executed during all the tests and see a visual of what is and is not covered.
 
