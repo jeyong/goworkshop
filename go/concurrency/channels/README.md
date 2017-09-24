@@ -24,12 +24,12 @@ http://www.goinggo.net/2014/02/the-nature-of-channels-in-go.html
 
 ## Buffer Bloat - 2011
 
-* Large buffers prevent timely notification of back pressure.
+* 버퍼가 크면 채널로 받는 경우 제때 noti 받기가 어렵다.
 * They defeat your ability to reduce back pressure in a timely matter.
-* They can increase latency not reduce it.
-* Use buffered channels to provide a way of maintaining continuity.
-	* Don't use them just for performance.
-	* Use them to handle well defined bursts of data.
+* 지연 시간이 증가될 수 있다.
+* 수신의 연속성을 유지하는 방법으로 buffered channel을 사용한다.
+	* 단순히 성능 목적으로 사용하지 않는다.
+	* 잘 정의된 큰 데이터를 처리하기 위한 용도로 사용
 	* Use them to deal with speed of light issues between handoffs.
 
 [Bufferbloat: Dark Buffers in the Internet](https://www.youtube.com/watch?v=qbIozKVz73g)  

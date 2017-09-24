@@ -45,19 +45,19 @@ _"아키텍쳐는 단순히 조각의 지합이 아니다. 조각들로 무엇�
 
 ### 기존 소프트웨어(legacy Software)
 
-Do you care about the legacy you are leaving behind?
+기존 코드가 신경쓰이는가?
 
-_"There are two kinds of software projects: those that fail, and those that turn into legacy horrors." - Peter Weinberger (inventor of AWK)_
+_"2종류 소프트웨어 프로젝트가 있다: 실패하는 것과 끔찍한 유산으로 남겨질 프로젝트." - Peter Weinberger (inventor of AWK)_
 
-_"Legacy software is an unappreciated but serious problem. Legacy code may be the downfall of our civilization." - Chuck Moore (inventor of Forth)_
+_"기존 소프트웨어(Legacy software)는 환영받지 못하고 심각한 문제가 된다. 기존 코드가 문명을 몰락시킬지도 모른다." - Chuck Moore (inventor of Forth)_
 
 ---
 
-### Productivity vs Performance
+### 생산성 vs 성능
 
-Productivity and performance both matter, but in the past you couldn’t have both. You needed to choose one over the other. We naturally gravitated to productivity, with the idea or hope that the hardware would resolve our performance problems for free. This movement towards productivity has resulted in the design of programming languages that produce sluggish software that is out pacing the hardware’s ability to make them faster.
+생산성과 성능 모두 중요합니다. 하지만 과거에는 두가지 모두를 가질 수는 없었습니다. 생산성을 중요시 했었는데 이는 하드웨어로 성능 문제를 쉽게 해결할 수 있다는 생각이 깔려 있었기 때문입니다. 생산성을 중시하는 움직임은 결국 프로그래밍 언어의 설계에 달려 있습니다. 하드웨어의 능력을 더 빠르게 맞춰주는 프로그래밍 언어로 빠른 소프트웨어를 만들 수 있다.
 
-By following Go’s idioms and a few guidelines, we can write code that can be reasoned about by anyone who looks at it. We can write software that simplifies, minimizes and reduces the amount of code we need to solve the problems we are working on. We don’t have to choose productivity over performance or performance over productivity anymore. We can have both.
+Go의 이디엄과 몇 가지 가이드라인을 지킨다면, 코드를 보는 누구나 예측가능한 코드를 작성할 수 있습니다. 문제를 해결하는데 필요한 코드의 양을 단순화, 최소화 시키는 소프트웨어를 작성할 수 있습니다. 성능대신 생산성을 선택하거나 생산성 대신 성능을 포기할 필요가 없습니다. 이제 두가지 모두를 가질 수 있습니다.
 
 **인용**
 
@@ -73,7 +73,7 @@ _"The trend in programming language design has been to create languages that enh
 
 ---
 
-### Correctness vs Performance
+### 정확성 vs 성능(Correctness vs Performance)
 
 You want to write code that is optimized for correctness. Don't make coding decisions based on what you think might perform better. You must benchmark or profile to know if code is not fast enough. Then and only then should you optimize for performance. This can't be done until you have something working.
 

@@ -22,9 +22,9 @@ https://www.goinggo.net/2017/02/package-oriented-design.html
 * 패키징은 다른 언어에서 소스 코드를 구조하는 방법과 충돌이 발생한다.
 * 다른 언어에서 패키징은 사용하거나 무시할지 선택할 수 있는 특징이다. 
 * 소스트리에서 마이크로서비스의 개념을 적용하는 것처럼 패키징을 생각할 수 있다.
-* All packages are "first class," and the only hierarchy is what you define in the source tree for your project.
-* There needs to be a way to “open” parts of the package to the outside world.
-* Two packages can’t cross-import each other. Imports are a one way street. 
+* 모든 패키지는 "first class"이며 여러분 프로젝트에서 소스 트리에 정의한 것만 계층을 갖는다.
+* 패키지의 일부를 외부로 "오픈"하는 방법이 필요하다.
+* 2개 패키지는 서로 import할 수 없다. import는 일방향으로만 존재한다.
 
 ## 디자인 철학
 

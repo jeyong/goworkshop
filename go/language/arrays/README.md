@@ -24,10 +24,10 @@
 
 ## CPU Cache 노트
 
-* CPU caches works by caching main memory on cache lines.
-* Cache lines today are either 32 or 64 bytes wide depending on the hardware.
-* Cores do not access main memory directly. They tend to only have access their local caches.
-* Both data and instructions are stored in the caches.
+* CPU caches는 cache lines에 메인 메모리를 캐쉬하는 방식으로 동작한다.
+* 오늘날 Cache lines는 하드웨어에 따라서 32 혹은 64 bytes를 갖는다.
+* 코어는 직접 메인 메모리에 접근하지 않는다. 자신의 로컬 캐쉬만 접근한다.
+* 데이터와 명령 모두 캐쉬에 저장된다.
 * Cache lines are shuffled down L1->L2->L3 as new cache lines need to be stored in the caches.
 * Hardware likes to traverse data and instructions linearly along cache lines.
 * Main memory is built on relatively fast cheap memory. Caches are built on very fast expensive memory.
@@ -145,7 +145,7 @@ Send packet CA->Netherlands->CA .... 150,000,000 ns  = 150 ms
 
 ### 연습문제 1
 
-Declare an array of 5 strings with each element initialized to its zero value. Declare a second array of 5 strings and initialize this array with literal string values. Assign the second array to the first and display the results of the first array. Display the string value and address of each element.
+zero value로 각 element가 초기화되는 5 strings의 array를 선언합니다. 5 strings의 2번째 array를 선언하고 이 array를 literal string 값으로 초기화합니다. 2번째 array를 첫번째에 다가 할당하고 첫번째 array의 결과를 출력합니다. string value과 각 element의 주소를 출력합니다.
 
 [Template](exercises/template1/template1.go) ([Go Playground](https://play.golang.org/p/H1jTYxk7o6)) |
 [Answer](exercises/exercise1/exercise1.go) ([Go Playground](https://play.golang.org/p/i_2oDZ1ZSg))
