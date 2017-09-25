@@ -108,11 +108,11 @@ Send packet CA->Netherlands->CA .... 150,000,000 ns  = 150 ms
 
 #### CPU Caches / Memory
 
-[CPU Caches and Why You Care - Video](https://www.youtube.com/watch?v=WDIkqP4JbkE) - Scott Meyers  
-[CPU Caches and Why You Care - Deck](http://www.aristeia.com/TalkNotes/codedive-CPUCachesHandouts.pdf) - Scott Meyers  
+[CPU Caches를 왜 고려해야하나 - Video](https://www.youtube.com/watch?v=WDIkqP4JbkE) - Scott Meyers  
+[CPU Caches를 왜 고려해야하나 - Deck](http://www.aristeia.com/TalkNotes/codedive-CPUCachesHandouts.pdf) - Scott Meyers  
 [Mythbusting Modern Hardware to Gain 'Mechanical Sympathy`](https://www.youtube.com/watch?v=MC1EKLQ2Wmg) - Martin Thompson  
-[What Every Programmer Should Know About Memory](http://www.akkadia.org/drepper/cpumemory.pdf) - Ulrich Drepper  
-[How CPU Caches Work and Why](http://www.extremetech.com/extreme/188776-how-l1-and-l2-cpu-caches-work-and-why-theyre-an-essential-part-of-modern-chips) - Joel Hruska  
+[모든 프로그래머가 메모리에 대해서 알아야만 하는 것](http://www.akkadia.org/drepper/cpumemory.pdf) - Ulrich Drepper  
+[CPU Caches가 어떻게 동작하고 왜 그렇게 동작하는가](http://www.extremetech.com/extreme/188776-how-l1-and-l2-cpu-caches-work-and-why-theyre-an-essential-part-of-modern-chips) - Joel Hruska  
 [Modern Microprocessors A 90 Minute Guide](http://www.lighterra.com/papers/modernmicroprocessors) - Jason Robert Carey Patterson  
 [Memory part 2: CPU caches](http://lwn.net/Articles/252125) - Ulrich Drepper  
 [The Free Lunch Is Over](http://www.gotw.ca/publications/concurrency-ddj.htm) - Herb Sutter  
@@ -126,17 +126,17 @@ Send packet CA->Netherlands->CA .... 150,000,000 ns  = 150 ms
 
 #### Data-Oriented Design
 
-[Data-Oriented Design and C++](https://www.youtube.com/watch?v=rX0ItVEVjHc) - Mike Acton  
-[Efficiency with Algorithms, Performance with Data Structures](https://www.youtube.com/watch?v=fHNmRkzxHWs) - Chandler Carruth  
+[Data-Oriented Design와 C++](https://www.youtube.com/watch?v=rX0ItVEVjHc) - Mike Acton  
+[Algorithms의 효율성, Data Structures의 성능](https://www.youtube.com/watch?v=fHNmRkzxHWs) - Chandler Carruth  
 [Taming the performance Beast](https://www.youtube.com/watch?v=LrVi9LHP8Bk) - Klaus Iglberger  
 
-[Pitfalls of OOP](http://harmful.cat-v.org/software/OO_programming/_pdf/Pitfalls_of_Object_Oriented_Programming_GCAP_09.pdf) - Tony Albrecht  
-[Why you should avoid Linked Lists](https://www.youtube.com/watch?v=YQs6IC-vgmo) - Bjarne Stroustrup  
+[OOP의 함정](http://harmful.cat-v.org/software/OO_programming/_pdf/Pitfalls_of_Object_Oriented_Programming_GCAP_09.pdf) - Tony Albrecht  
+[왜 Linked List를 피해야만 하는가](https://www.youtube.com/watch?v=YQs6IC-vgmo) - Bjarne Stroustrup  
 [Data-Oriented Design (Or Why You Might Be Shooting Yourself in The Foot With OOP)](http://gamesfromwithin.com/data-oriented-design) - Noel    
 
 ## 코드 리뷰
 
-[Declare, initialize and iterate](example1/example1.go) ([Go Playground](https://play.golang.org/p/wUzREuHhLY))  
+[Declare, initialize와 iterate](example1/example1.go) ([Go Playground](https://play.golang.org/p/wUzREuHhLY))  
 [Different type arrays](example2/example2.go) ([Go Playground](https://play.golang.org/p/tyOZ5_zBUN))  
 [Contiguous memory allocations](example3/example3.go) ([Go Playground](https://play.golang.org/p/DyZ7spMgZ3))  
 [Range mechanics](example4/example4.go) ([Go Playground](https://play.golang.org/p/Hym5wBsEMO))  
