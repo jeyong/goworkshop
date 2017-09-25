@@ -26,5 +26,45 @@ Go는 오픈소스 프로그래밍 언어로 효율적이고 신뢰할 수 있�
  * array, stack, list, queue 와 같은 개념에 익숙
  * process와 thread 개념 이해
 
+## 워크숍 참여 준비
+### Editor
+
+**Gogland**
+https://www.jetbrains.com/go/download/
+
+**Visual Studio Code**
+https://code.visualstudio.com/Updates  
+https://github.com/microsoft/vscode-go
+
+**Atom**  
+https://atom.io/  
+https://github.com/joefitzgerald/go-plus
+
+**Sublime**  
+http://www.sublimetext.com/  
+https://github.com/DisposaBoy/GoSublime  
+http://www.wolfe.id.au/2015/03/05/using-sublime-text-for-go-development/
+
+**VIM**  
+http://www.vim.org/download.php  
+http://farazdagi.com/blog/2015/vim-as-golang-ide/
+
+**LiteIDE**  
+http://sourceforge.net/projects/liteide/files/
+
+**Emacs**  
+https://github.com/creack/dotfiles
+
+### Workshop 자료 설치
+
+```sh
+mkdir -p $GOPATH/src/github.com/jeyong && cd $_
+git clone https://github.com/jeyong/goworkshop.git
+```
+
+## Go Get으로 자료 받기
+
+    go get github.com/jeyong/goworkshop
+
 ___
 모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.

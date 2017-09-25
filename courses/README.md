@@ -14,46 +14,6 @@
  * array, stack, list, queue 와 같은 개념에 익숙
  * process와 thread 개념 이해
 
-## 워크숍 참여 준비
-### Editor
-
-**Gogland**
-https://www.jetbrains.com/go/download/
-
-**Visual Studio Code**
-https://code.visualstudio.com/Updates  
-https://github.com/microsoft/vscode-go
-
-**Atom**  
-https://atom.io/  
-https://github.com/joefitzgerald/go-plus
-
-**Sublime**  
-http://www.sublimetext.com/  
-https://github.com/DisposaBoy/GoSublime  
-http://www.wolfe.id.au/2015/03/05/using-sublime-text-for-go-development/
-
-**VIM**  
-http://www.vim.org/download.php  
-http://farazdagi.com/blog/2015/vim-as-golang-ide/
-
-**LiteIDE**  
-http://sourceforge.net/projects/liteide/files/
-
-**Emacs**  
-https://github.com/creack/dotfiles
-
-### Workshop 자료 설치
-
-```sh
-mkdir -p $GOPATH/src/github.com/jeyong && cd $_
-git clone https://github.com/jeyong/goworkshop.git
-```
-
-## Go Get으로 자료 받기
-
-    go get github.com/jeyong/goworkshop
-
 ## 준비 중인 워크숍
 ### Go 웹 프로그래밍
  *
