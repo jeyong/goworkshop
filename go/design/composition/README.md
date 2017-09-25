@@ -37,10 +37,10 @@ http://golang.org/doc/effective_go.html#embedding
 #### 디커플링 (Decoupling)
 
 [Struct Composition](decoupling/example1/example1.go) ([Go Playground](https://play.golang.org/p/axLYwteYkK))  
-[Decoupling With Interface](decoupling/example2/example2.go) ([Go Playground](https://play.golang.org/p/EnzMrT7Fdo))  
+[Interface로 디커플링](decoupling/example2/example2.go) ([Go Playground](https://play.golang.org/p/EnzMrT7Fdo))  
 [Interface Composition](decoupling/example3/example3.go) ([Go Playground](https://play.golang.org/p/ES4BOnDX6O))  
-[Decoupling With Interface Composition](decoupling/example4/example4.go) ([Go Playground](https://play.golang.org/p/ufFSFxCdEs))  
-[Remove Interface Pollution](decoupling/example5/example5.go) ([Go Playground](https://play.golang.org/p/a8C4KM9AU2))  
+[Interface Composition으로 디커플링](decoupling/example4/example4.go) ([Go Playground](https://play.golang.org/p/ufFSFxCdEs))  
+[Interface Pollution 제거하기](decoupling/example5/example5.go) ([Go Playground](https://play.golang.org/p/a8C4KM9AU2))  
 
 #### Conversion과 Assertions
 

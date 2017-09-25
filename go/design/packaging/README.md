@@ -28,19 +28,19 @@ https://www.goinggo.net/2017/02/package-oriented-design.html
 
 ## 디자인 철학
 
-* **To be purposeful, packages must provide, not contain.**
-    * Packages must be named with the intent to describe what it provides.
-    * Packages must not become a dumping ground of disparate concerns.
-* **To be usable, packages must be designed with the user as their focus.**
-    * Packages must be intuitive and simple to use.
-    * Packages must respect their impact on resources and performance.
-    * Packages must protect the user’s application from cascading changes.
+* **목적을 분명히 가져야, 패키지는 반드시 목적을 제공해야만 한다. 단순히 포함하는 정도로는 안된다.**
+    * 패키지는 반드시 제공하는 것이 무엇인지에 대한 의도를 반드시 이름으로 사용해야만 한다.
+    * 패키지는 서로 이질적인 의도를 가진 것을 기반으로 하면 안된다.
+* **유용해야, 패키지는 중점을 두는 것에 맞춰서 해당 사용자에 맞게 설계해야만 한다.**
+    * 패캐지는 사용하기에 직관적이고 단순해야만 한다.
+    * 패키지는 리소스와 성능에 미치는 옇향을 고려해야만 한다.
+    * 패키지는 변경에 따른 영향이 전파되지 않도록 사용자의 어플리케이션을 보호해야만 한다.
     * Packages must prevent the need for type assertions to the concrete.
     * Packages must reduce, minimize and simplify its code base.
-* **To be portable, packages must be designed with reusability in mind.**
-    * Packages must aspire for the highest level of portability.
-    * Packages must reduce setting policy when it’s reasonable and practical.
-    * Packages must not become a single point of dependency.
+* **이식하기 좋아야, 패키지는 재사용을 염두에 두고 설계해야만 한다.**
+    * 패키지는 이식성을 가장 높은 수준으로 고려해야만 한다.
+    * 패키지는 합리적이고 실제적인 경우에 설정 정책을 줄여야만 한다.Packages must reduce setting policy when it’s reasonable and practical.
+    * 패키지가 의존성의 유일한 지점이 되면 안된다.
 
 ## 프로젝트 구조
 

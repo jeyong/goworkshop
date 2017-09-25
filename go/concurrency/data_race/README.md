@@ -11,12 +11,12 @@ data race는 2개 이상의 goroutine이 동일한 리소스에 동시에 읽기
 ## Cache Coherency and False Sharing
 아래 정보는 2014년에 Dive에서 Scott Meyers가 이야기한 내용:
 
-[CPU Caches and Why You Care (30:09-38:30)](https://youtu.be/WDIkqP4JbkE?t=1809)  
+[CPU Caches를 왜 신경써야하나 (30:09-38:30)](https://youtu.be/WDIkqP4JbkE?t=1809)  
 [Code Example](../../testing/benchmarks/falseshare/README.md)
 
 ![figure1](figure1.png)
 
-## Cache Coherency and False Sharing Notes
+## Cache Coherency와 False Sharing 노트
 
 * Thread memory access matters.
 * If your algorithm is not scaling look for false sharing problems.
