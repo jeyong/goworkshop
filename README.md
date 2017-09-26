@@ -29,10 +29,10 @@ Go는 오픈소스 프로그래밍 언어로 효율적이고 신뢰할 수 있�
 ## 워크숍 참여 준비
 ### Editor
 
-**Gogland**
+**Gogland**  
 https://www.jetbrains.com/go/download/
 
-**Visual Studio Code**
+**Visual Studio Code**  
 https://code.visualstudio.com/Updates  
 https://github.com/microsoft/vscode-go
 
