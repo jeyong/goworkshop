@@ -1,14 +1,14 @@
 ## Go Fuzz
 
-Go-fuzz is a coverage-guided fuzzing solution for testing of Go packages. Fuzzing is mainly applicable to packages that parse complex inputs (both text and binary), and is especially useful for hardening of systems that parse inputs from potentially malicious users (e.g. anything accepted over a network).
+Go-fuzz Go 패키지를 테스팅하기 위해 커버리지가 안내하는 방식의 fuzzing 솔루션입니다. Fuzzing는 복잡한 입력을 파싱하는 패키지에 주로 적용됩니다.(text와 binary) 잠재적으로 악의를 가진 사용자로부터의 입력을 파싱하는 시스템을 견고하게 만드는데 특히 유용합니다.(예로 네트워크 상에서 어떤 것을 수신하는 경우)
 
-## Notes
+## 노트
 
-* Fuzzing allows you to find cases where your code panics.
-* Once you identify data inputs that causes panics, code can be corrected and tests created.
-* Table tests are an excellent choice for these input data panics.
+* Fuzzing은 여러분 code에서 panic이 일어나느 지점을 찾는 것이 가능하다.
+* 일단 panic을 일으키는 데이터 입력을 식별하면 code를 수정할 수 있고 테스트를 생성할 수 있다.
+* Table tests는 이런 종류의 입력 데이터 panic에 대해서 훌륭한 선택이다.
 
-## Links
+## 링크
 
 https://github.com/dvyukov/go-fuzz  
 [go-fuzz github.com/arolek/ase](https://medium.com/@dgryski/go-fuzz-github-com-arolek-ase-3c74d5a3150c#.xvq0ol2zj) - Damian Gryski  
@@ -16,16 +16,16 @@ https://github.com/dvyukov/go-fuzz
 [DNS parser, meet Go fuzzer](https://blog.cloudflare.com/dns-parser-meet-go-fuzzer) - Filippo Valsorda  
 [Fuzzing Beyond Security: Automated Testing with go-fuzz](https://www.youtube.com/watch?v=kOZbFSM7PuI) - Filippo Valsorda  
 
-## Code Review
+## 코드 리뷰
 
-_When showing a demo, remove the folders under `workdir/corpus` and the `api-fuzz.zip` file._
+_데모를 보여줄때는 `workdir/corpus` 아래에 있는 폴더와 `api-fuzz.zip` 파일을 제거하라._
 
-First thing is to install the Go fuzz tooling:
+가장 먼저할 일은 Go fuzz 툴을 설치하는 것:
 
 		go get github.com/dvyukov/go-fuzz/go-fuzz
 		go get github.com/dvyukov/go-fuzz/go-fuzz-build
 
-Review the code we want to find problems with and the existing test:
+문제를 찾고자 하는 코드와 기존 테스트를 리뷰하기:
 
 [Code To Fuzz](example1/example1.go) ([Go Playground](http://play.golang.org/p/6al_yc8YtO))  
 [Test For The Code](example1/example1_test.go) ([Go Playground](http://play.golang.org/p/-6QXYkTNm6)) 
@@ -59,12 +59,12 @@ Review the `crashers` folder under the `workdir/corpus` folders. This contains p
 		
 		{"/process", http.StatusBadRequest, []byte("0"), `{"Error":"The Message"}`},
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 A function named `UnpackUsers` exists and requires fuzzing. A `Fuzz` function and corpus have also been provided. Use the Go Fuzz tooling to find as many problems as you can. In each case fix the bug and add a test table record to validate the test is fixed.
 
-[Exercise](exercises/exercise1)
+[연습문제](exercises/exercise1)
 ___
 모든 자료에 대해서 [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/LICENSE-2.0) 라이센스가 적용됩니다.
