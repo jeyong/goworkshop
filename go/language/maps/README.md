@@ -12,12 +12,12 @@ map은 자료구조로 key/value 쌍의 데이터를 저장 및 관리하는데 
 
 http://blog.golang.org/go-maps-in-action  
 http://www.goinggo.net/2013/12/macro-view-of-map-internals-in-go.html  
-[Keith Randall - Inside the Map Implementation](https://www.youtube.com/watch?v=Tl7mi9QmLns)
+[Keith Randall - Map 내부 구현](https://www.youtube.com/watch?v=Tl7mi9QmLns)
 
 ## 코드 리뷰
 
 [Declare, initialize and iterate](example1/example1.go) ([Go Playground](https://play.golang.org/p/EHfkoipKYF))  
-[Map literals and delete](example2/example2.go) ([Go Playground](https://play.golang.org/p/B2klwmqmPZ))  
+[Map literals과 delete](example2/example2.go) ([Go Playground](https://play.golang.org/p/B2klwmqmPZ))  
 [Map key restrictions](example3/example3.go) ([Go Playground](https://play.golang.org/p/LZRHA7FG6s))  
 
 ## 연습문제

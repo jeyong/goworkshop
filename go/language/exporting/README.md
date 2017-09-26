@@ -33,9 +33,9 @@ http://www.goinggo.net/2014/03/exportedunexported-identifiers-in-go.html
 ## 연습문제
 
 ### 연습문제 1
-**Part A** Create a package named toy with a single exported struct type named Toy. Add the exported fields Name and Weight. Then add two unexported fields named onHand and sold. Declare a factory function called New to create values of type toy and accept parameters for the exported fields. Then declare methods that return and update values for the unexported fields.
+**Part A** toy라는 이름을 가진 package를 생성합니다. 이 package를 Toy라는 struct 타입을 export합니다. 여기에 Name과 Weight라는 필드를 export하도록 추가합니다. 다음으로 onHand와 sold라는 이름의 2개 필드를 export하지 않습니다. New라는 이름의 팩토리 함수를 선언해서 toy 타입의 값을 생성하고 export 필드에 대해서 파라미터를 받도록 합니다. 그리고 export하지 않는 필드에 대해서 값을 업데이트하고 반환하는 method를 선언합니다. 
 
-**Part B** Create a program that imports the toy package. Use the New function to create a value of type toy. Then use the methods to set the counts and display the field values of that toy value.
+**Part B** toy package를 import하는 프로그램을 생성합니다. New함수를 사용해서 toy 타입의 값을 생성합니다. 다음으로 method를 사용해서 count를 설정하고 toy 값의 필드의 값을 출력합니다.
 
 [Template](exercises/template1) |
 [Answer](exercises/exercise1)

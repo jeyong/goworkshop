@@ -94,11 +94,11 @@ Garbage collector statistics.
 
 #### Heap Profiling
 
-Run the pprof tool.
+pprof 도구 실행.
 
 	$ go tool pprof -<PICK_MEM_PROFILE> ./pprof http://localhost:4000/debug/pprof/heap
 
-Documentation of memory profile options.
+메모리 프로파일 옵션 문서화.
 
     // Useful to see current status of heap.
 	-inuse_space  : Allocations live at the time of profile  	** default
@@ -108,30 +108,30 @@ Documentation of memory profile options.
 	-alloc_space  : All allocations happened since program start
 	-alloc_objects: Number of object allocated at the time of profile
 
-If you want to reduce memory consumption, look at the `-inuse_space` profile collected during normal program operation.
+메모리 사용을 줄이고자 한다면, 정상적인 프로그램 동작 동안 수집한 `-inuse_space` 프로파일을 살펴보세요.
 	
-If you want to improve execution speed, look at the `-alloc_objects` profile collected after significant running time or at program end.
+실행 속도를 개선하고자 한다면, 실행 시간이 길었거나 프로그램이 종료된 후에 수집한 `-alloc_objects` 프로파일을 살펴보세요. 
 
 #### CPU Profiling
 
-Run the Go pprof tool in another window or tab to review cpu information.
+다른 창을 띄워서 Go pprof 도구를 실행하거나 cpu 정보를 살펴봅니다.
 
 	$ go tool pprof ./pprof http://localhost:4000/debug/pprof/profile
 
-_Note that goroutines in "syscall" state consume an OS thread, other goroutines do not (except for goroutines that called runtime.LockOSThread, which is, unfortunately, not visible in the profile). Note that goroutines in "IO wait" state also do not consume threads, they are parked on non-blocking network poller (which uses epoll/kqueue/GetQueuedCompletionStatus to unpark goroutines later)._
+_"syscall" 상태에 있는 goroutine들은 OS thread를 사용합니다. 반면에 다른 goroutine들은 OS thread를 사용하지 않습니다.(runtime.LockOSThread라는 goroutine을 제외하고는 아쉽게도 프로파일에 나타나지 않음) "IO wait" 상태에 있는 goroutine들도 thread를 사용하지 않으며, non-blocking network poller에 존재합니다.(추후에 goroutine을 꺼내오기 위해서 epoll/kqueue/GetQueuedCompletionStatus를 사용)_
 
-Explore using the **top**, **list**, **web** and **web list** commands.
+**top**, **list**, **web**, **web list** 명령도 사용해 보세요.
 
-### Comparing Profiles
+### 프로파일 비교하기
 
-Take a snapshot of the current heap profile. Then do the same for the cpu profile.
+현재 heap 프로파일의 스냅샵을 가집니다. 다음으로 해당 cpu 프로파일에 대해서 동일하게 실행합니다.
 
     $ curl -s http://localhost:4000/debug/pprof/heap > base.heap
 
-After some time, take another snapshot:
+시간이 지난 후에 다른 스냅샵을 가집니다 :
 
     $ curl -s http://localhost:4000/debug/pprof/heap > current.heap
 
-Now compare both snapshots against the binary and get into the pprof tool:
+binary에 대해서 두개 스냅샵을 비교하고 pprof 도구를 시작합니다: 
 
     $ go tool pprof -inuse_space -base base.heap ./pprof current.heap
