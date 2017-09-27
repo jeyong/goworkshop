@@ -10,7 +10,15 @@ Go는 오픈소스 프로그래밍 언어로 효율적이고 신뢰할 수 있�
 이런 Go 프로그래밍 언어를 짧은 시간내에 효과적으로 익히기 위한 워크숍 과정을 개설하였습니다.
 
 ## 워크숍 둘러보기
- * [Go 워크숍](courses/README.md)
+ * [워크숍 과정 둘러보기](courses/README.md)
+
+---- 
+
+* [일정](https://github.com/jeyong/goworkshop#일정)
+* [최소참여조건](https://github.com/jeyong/goworkshop#참여-최소-요건)
+* [워크숍 참여준비](https://github.com/jeyong/goworkshop#워크숍-참여-준비)
+* [워크숍 자료받기](https://github.com/jeyong/goworkshop#go-get으로-자료-받기)
+
 
 ## 일정
        
