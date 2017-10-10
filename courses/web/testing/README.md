@@ -1,11 +1,11 @@
 ## Web - Testing
 
-Learn the basics of testing web services and applications in Go.
+web service와 어플리케이션을 테스팅하기
 
 ## 노트
 
-* The standard library has a package named httptest with good support.
-* There are several ways to create unit and integration tests in Go.
+* 표준 라이브러리 중에 httptest라는 패키지에서 지원하고 있습니다.
+* 단위 테스트와 통합 테스트를 생성하는 여러 가지 방법이 있습니다.
 
 ## 링크
 

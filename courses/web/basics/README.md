@@ -1,12 +1,11 @@
 ## Web - Basics
 
-Learn the basics of building web services and applications in Go.
+web service와 어플리케이션을 만드는데 필요한 기본 지식을 배워봅시다.
 
-## Notes
+## 노트
 
-* The standard library has much of what you need to build services and apps.
-* The http package provides the building blocks. The most important
-  types to learn right now are these
+* 표준 라이브러리에서 service와 app을 만드는데 필요한 많은 것들을 제공하고 있습니다.
+* http 패키지는 빌딩 블록을 제공합니다. 바로 익혀야 하는 가장 중요한 타입은 다음과 같습니다.
 
 ```go
 // A Request represents an HTTP request received by a server

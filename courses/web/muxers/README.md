@@ -1,12 +1,12 @@
 ## Web - Muxers/Routers
 
-Learn the basics of using some of the more popular routers and routing support.
+가장 널리 알려진 router들과 routing을 지원에 대해서 알아봅시다.
 
 ## 노트
 
-* The standard library has much of what you need to build services and apps.
-* The http package provides the building blocks.
-* There are other great packages in the Go ecosystem to help.
+* 표준 라이브러리에서 service와 app을 만드는데 필요한 많은 것들을 제공하고 있습니다.
+* http 패키지는 빌딩 블록을 제공합니다.
+* 써드파티가 제공하는 다른 좋은 패키지들도 많이 있습니다.
 
 ## 링크
 

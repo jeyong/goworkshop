@@ -1,12 +1,12 @@
 ## Web - TLS
 
-Learn about securing your application using TLS.
+TLS를 사용해서 안전한 어플리케이션 개발하기
 
 ## 노트
 
-* Usually apps just listen for HTTP and offload TLS termination to a load balancer like Caddy or Nginx.
-* The net/http package provides support for TLS if you really need it
-* The crypto/tls package comes with a program for generating self signed certificates
+* 일반적으로 app은 HTTP를 listen하고 Caddy나 Nginx와 같은 로드 밸랜싱을 담당하는 것이 TLS를 종료합니다.
+* 여러분이 정말 필요한 경우에는 net/http 패키지의 TLS를 이용합니다.
+* crypto/tls 패키지에는 self signed certificates를 생성하는 프로그램이 포함되어 있습니다.
 
     go run /usr/local/go/src/crypto/tls/generate_cert.go --host localhost
 

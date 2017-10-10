@@ -1,12 +1,12 @@
 ## Web - Posts and Forms
 
-Learn the basics of making POST calls and working with multipart form data.
+POST 호출을 만들고 multipart form data 동작에 관한 내용을 알아봅시다.
 
 ## 노트
 
-* The standard library has much of what you need to build services and apps.
-* The `net/http` package provides the building blocks.
-* There are other great packages in the Go ecosystem to help.
+* 표준 라이브러리에서 service와 app을 만드는데 필요한 많은 것들을 제공하고 있습니다.
+* `net/http` 패키지는 빌딩 블록을 제공합니다.
+* 써드파티가 제공하는 다른 좋은 패키지들도 많이 있습니다.
 
 ## 링크
 

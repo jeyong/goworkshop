@@ -1,12 +1,12 @@
 ## Web - Web Sockets
 
-The web is changing and users are expecting fast, dynamic, and interactive web applications. Web Sockets allow for direct two-way communication between the front-end (JavaScript/HTML) and the back-end (Go).
+web socket으로 프론트-엔드와 백-엔드 사이에 직접 양방향 통신이 가능합니다.
 
 ## 노트
 
-* The standard library has much of what you need to build services and apps.
-* The http package provides the building blocks.
-* There are other great packages in the Go ecosystem to help.
+* 표준 라이브러리에서 service와 app을 만드는데 필요한 많은 것들을 제공하고 있습니다.
+* http 패키지는 빌딩 블록을 제공합니다.
+* 써드파티가 제공하는 다른 좋은 패키지들도 많이 있습니다.
 
 ## 링크
 

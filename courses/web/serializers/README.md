@@ -1,6 +1,6 @@
 ## Web - Serializers
 
-Learn the basics of using and applying custom JSON and XML serializers.
+커스텀 JSON과 XML 직렬화를 사용하고 적용하는 방법에 대해서 알아봅시다.
 
 ## 링크
 

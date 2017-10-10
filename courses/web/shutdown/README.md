@@ -1,10 +1,10 @@
 ## Web - Shutdown
 
-Learn how to gracefully shut a server down.
+안전하게 서버 셧다운하기
 
 ## 노트
 
-Since 1.8 the `Server` from `net/http` package has built in support for graceful shutdown. Prior to 1.8 use `github.com/braintree/manners`.
+1.8부터는 `net/http` 패키지에 `Server`가 빌트인으로 셧다운을 지원합니다. 1.8 이전 버전인 경우에는 `github.com/braintree/manners` 을 사용합니다.
 
 ## 링크
 
