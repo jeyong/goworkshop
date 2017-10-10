@@ -2,7 +2,7 @@
 
 Learn about securing your application using TLS.
 
-## Notes
+## 노트
 
 * Usually apps just listen for HTTP and offload TLS termination to a load balancer like Caddy or Nginx.
 * The net/http package provides support for TLS if you really need it
@@ -10,21 +10,21 @@ Learn about securing your application using TLS.
 
     go run /usr/local/go/src/crypto/tls/generate_cert.go --host localhost
 
-## Links
+## 링크
 
 https://golang.org/pkg/net/http/  
 https://golang.org/pkg/crypto/tls/  
 https://golang.org/x/crypto/acme/autocert/  
 https://caddyserver.com/  
 
-## Code Review
+## 코드 리뷰
 
 TLS support: [Code](example1/main.go)
 Automatic TLS with ACME via LetsEncrypt: [Code](example2/main.go)
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 TBD
 ___

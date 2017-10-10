@@ -46,12 +46,12 @@ func ListenAndServe(addr string, handler Handler) error
 ```
 
 
-## Links
+## 링크
 
 https://golang.org/pkg/net/http/  
 https://golang.org/doc/articles/wiki/  
 
-## Code Review
+## 코드 리뷰
 
 [Basic Web Handler](example1/main.go)  
 [Routing Handlers](example2/main.go)  
@@ -60,7 +60,7 @@ https://golang.org/doc/articles/wiki/
 [Closures as HandlerFuncs](example5/main.go)  
 [Servers are already Concurrent](example6/main.go)  
 
-## Notes
+## 노트
 
 An HTTP Request
 ![Request](request.png)
@@ -69,9 +69,9 @@ The Response
 
 ![Response](response.png)
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 Write a simple web service that has a set of different routes that return the string "Hello World" in multiple languages. Build the service using an Application context (example4) that will own the different handler methods. Then create your own mux (example2), bind the routes and start the service. Validate your routes work in your browser.
 ___

@@ -2,27 +2,27 @@
 
 Learn the basics of making POST calls and working with multipart form data.
 
-## Notes
+## 노트
 
 * The standard library has much of what you need to build services and apps.
 * The `net/http` package provides the building blocks.
 * There are other great packages in the Go ecosystem to help.
 
-## Links
+## 링크
 
 https://golang.org/pkg/net/http/  
 https://golang.org/doc/articles/wiki/  
 
-## Code Review
+## 코드 리뷰
 
 Basic POST: [Code](example1/main.go) | [Test](example1/main_test.go)  
 Simple Form: [Code](example2/main.go) | [Test](example2/main_test.go)  
 Structured Form Parsing: [Code](example3/main.go) | [Test](example3/main_test.go)  
 Multipart Forms: [Code](example4/main.go) | [Test](example4/main_test.go)  
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 Take the multipart writer example and add support for a new form field that would specify the name of the folder to use for the uploaded image. If it does not exist use the current directory as the default. Then update the test to validate the code change.
 ___

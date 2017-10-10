@@ -2,13 +2,13 @@
 
 Learn the basics of using and applying custom JSON and XML serializers.
 
-## Links
+## 링크
 
 https://golang.org/pkg/encoding/json  
 https://golang.org/pkg/encoding/xml  
 http://mholt.github.io/json-to-go/  
 
-## Code Review
+## 코드 리뷰
 
 JSON Encoding: [Code](example1/main.go)  
 JSON Struct Tags: [Code](example2/main.go) | [Test](example2/main_test.go)  
@@ -18,9 +18,9 @@ JSON and net/http: [Code](example5/main.go)
 XML Encoding: [Code](example6/main.go) | [Test](example6/main_test.go)  
 MarshalXML Interface: [Code](example7/main.go) | [Test](example7/main_test.go)  
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 TBD
 ___

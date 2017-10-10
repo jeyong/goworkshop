@@ -2,26 +2,26 @@
 
 The web is changing and users are expecting fast, dynamic, and interactive web applications. Web Sockets allow for direct two-way communication between the front-end (JavaScript/HTML) and the back-end (Go).
 
-## Notes
+## 노트
 
 * The standard library has much of what you need to build services and apps.
 * The http package provides the building blocks.
 * There are other great packages in the Go ecosystem to help.
 
-## Links
+## 링크
 
 https://golang.org/pkg/net/http/
 https://golang.org/doc/articles/wiki/
 http://www.gorillatoolkit.org/pkg/websocket
 
-## Code Review
+## 코드 리뷰
 
 Standard Library websockets: [Code](example1/main.go) | [Test](example1/main_test.go)
 Gorilla websockets: [Code](example2/main.go) | [Test](example2/main_test.go)
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 TBD
 ___

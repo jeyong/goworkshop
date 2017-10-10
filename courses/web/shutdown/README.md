@@ -2,22 +2,22 @@
 
 Learn how to gracefully shut a server down.
 
-## Notes
+## 노트
 
 Since 1.8 the `Server` from `net/http` package has built in support for graceful shutdown. Prior to 1.8 use `github.com/braintree/manners`.
 
-## Links
+## 링크
 
 https://golang.org/pkg/net/http/  
 https://github.com/rakyll/hey  
 
-## Code Review
+## 코드 리뷰
 
 [Graceful Shutdown](example1/main.go)  
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 Use `hey` to generate load against the server in example 1. Close the server with ctrl-c while `hey` is running. Change the timeout value in the shutdown code to 100 milliseconds and repeat the exercise.
 ___

@@ -2,19 +2,19 @@
 
 Learn more about consuming web APIs.
 
-## Notes
+## 노트
 
 * The standard library has much of what you need to build services and apps.
 * The http package provides the building blocks.
 * There are other great packages in the Go ecosystem to help.
 
-## Links
+## 링크
 
 https://golang.org/pkg/net/http/  
 https://golang.org/doc/articles/wiki/  
 github.com/dvsekhvalnov/jose2go  
 
-## Code Review
+## 코드 리뷰
 
 Default HTTP support: [Test](example1/main_test.go)
 POST calls: [Test](example2/main_test.go)
@@ -24,9 +24,9 @@ Custom transporter: [Test](example5/main_test.go)
 Signing requests with JSON Web Tokens: [Code](example6/main.go) | [Test](example6/main_test.go)
 Canceling with Context: [Test](example7/main_test.go)
 
-## Exercises
+## 연습문제
 
-### Exercise 1
+### 연습문제 1
 
 Call the GitHub API to get a list of contributors for the `ardanlabs/gotraining` repository.
 
